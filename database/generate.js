@@ -34,7 +34,7 @@ const Looks = db.define('Looks', {
 
 */
 
-var pant_mods = ['SKI', 'GOLF', 'INSULATED', 'LIGHTWEIGHT', 'FLEECE', 'PRO', 'HEAVYWEIGHT', 'WARM-UP', 'TRACK', 'TRAINING', 'COMPRESSION', 'CLASSIC', 'PERFORMANCE', 'ATHLETIC', 'FITTED', 'THERMAL', 'JOGGER', 'KNIT', 'TERRY', 'RAIN', 'BASKETBALL', 'FOOTBALL', 'BASEBALL', 'CORE', 'TECH', 'STRETCH'];
+var pant_mods = ['SKI', 'GOLF', 'INSULATED', 'LIGHTWEIGHT', 'FLEECE', 'PRO', 'HEAVYWEIGHT', 'WARM-UP', 'TRACK', 'TRAINING', 'COMPRESSION', 'CLASSIC', 'PERFORMANCE', 'ATHLETIC', 'FITTED', 'THERMAL', 'KNIT', 'TERRY', 'RAIN', 'BASKETBALL', 'FOOTBALL', 'BASEBALL', 'CORE', 'TECH', 'STRETCH'];
 
 var pant_types = ['PANTS', 'SHORTS', 'JOGGERS', 'TIGHTS', 'SWEATPANTS'];
 
@@ -42,29 +42,47 @@ var shirt_mods = ['CLASSIC', 'TREFOIL', 'SPORT', 'ESSENTIAL', 'PERFORMANCE', 'LO
 
 var shirt_types = ['TEE', 'POLO', 'SHIRT', 'JERSEY', 'TANK TOP', 'TOP', 'CREW', 'HENLEY', 'MOCK NECK'];
 
-var jacket_types = ['JACKET', 'WINDBREAKER', 'TRACK JACKET', 'DOWN JACKET', 'PULLOVER', 'HOODIE', 'SWEATSHIRT', 'COAT', 'TRAINING JACKET', 'FLEECE JACKET', 'SOFT SHELL', 'VEST', 'FULL-ZIP', 'HALF-ZIP', 'SWEATER'];
+var jacket_mods = ['TRACK', 'DOWN', 'TRAINING', 'SOFT', 'HALF-ZIP', 'FULL-ZIP', 'INSULATED', 'LIGHTWEIGHT', 'FLEECE', 'PRO', 'HEAVYWEIGHT', 'WARM-UP', 'CLASSIC', 'PERFORMANCE', 'ATHLETIC', 'FITTED', 'THERMAL', 'KNIT', 'TERRY', 'RAIN', 'BASKETBALL', 'FOOTBALL', 'BASEBALL', 'CORE', 'TECH'];
 
-var looksArr = [];
+var jacket_types = ['JACKET', 'WINDBREAKER', 'PULLOVER', 'HOODIE', 'SWEATSHIRT', 'COAT', 'SHELL', 'VEST', 'SWEATER'];
 
-for (let i = 1; i <= 2; i++) {
+
+var createNewLook = (i) => {
   // create a new object
   let lookObj = {};
   // create fake data for it
   lookObj.id = i;
-  lookObj.pant_name = 
+  lookObj.pant_name = pant_mods[Math.floor(Math.random() * pant_mods.length)] + ' ' + pant_types[Math.floor(Math.random() * pant_types.length)];
   lookObj.pant_url = 'https://loremflickr.com/295/295/pants,shorts,sweatpants?random=' + i;
-  lookObj.pant_price = Math.floor(Math.random() * 110) + 15; 
-  lookObj.shirt_name = 'https://loremflickr.com/295/295/shirt,tee,jersey,t-shirt?random=' + i;
-  lookObj.shirt_url =
-  lookObj.shirt_price = Math.floor(Math.random() * 130) + 20;
-  lookObj.jacket_name =
+  lookObj.pant_price = Math.floor(Math.random() * 115) + 20; 
+  lookObj.shirt_name = shirt_mods[Math.floor(Math.random() * shirt_mods.length)] + ' ' + shirt_types[Math.floor(Math.random() * shirt_types.length)];
+  lookObj.shirt_url = 'https://loremflickr.com/295/295/shirt,tee,jersey,t-shirt?random=' + i;
+  lookObj.shirt_price = Math.floor(Math.random() * 100) + 15;
+  lookObj.jacket_name = jacket_mods[Math.floor(Math.random() * jacket_mods.length)] + ' ' + jacket_types[Math.floor(Math.random() * jacket_types.length)];
   lookObj.jacket_url = 'https://loremflickr.com/295/295/jacket,windbreaker,coat,sweatshirt,hoodie?random=' + i;
-  lookObj.jacket_price = Math.floor(Math.random() * 300) + 30;
-  // push it into the array
-  looksArr.push(lookObj);
+  lookObj.jacket_price = Math.floor(Math.random() * 200) + 30;
+
+  return lookObj;
 }
 
-str = JSON.parse(looksArr);
+var createNLookObjs = (n) => {
+  let looksArr = [];
+  for (let i = 1; i <= n; i++) {
+    // create a new object
+    let lookObj = createNewLook(i);
+    // push it into the array
+    looksArr.push(lookObj);
+  }
+  return looksArr;
+}
+
+var finalLooksArr = createNLookObjs(100);
+
+str = JSON.stringify(finalLooksArr);
+
+//console.log(str);
+
+// write headers and footers for the file so I can import it? Assign it to a variable?
 
 fs.writeFile('./database/generatedData.txt', str, function(err) {
   if (err) {
