@@ -76,7 +76,9 @@ var createNLookObjs = (n) => {
   return looksArr;
 }
 
-var finalLooksArr = createNLookObjs(100);
+console.time('createAndWriteData');
+
+var finalLooksArr = createNLookObjs(1000);
 
 str = JSON.stringify(finalLooksArr);
 
@@ -90,3 +92,5 @@ fs.writeFile('./database/generatedData.txt', str, function(err) {
   }
   console.log('The file was saved!');
 });
+
+console.timeEnd('createAndWriteData');
