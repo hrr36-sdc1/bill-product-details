@@ -13,7 +13,8 @@
     "db:setup": "node database/seed.js",
     "test": "jest --watchAll --forceExit",
     "debug": "jest --debug",
-    "jest:cache": "jest --clearCache"
+    "jest:cache": "jest --clearCache",
+    "generate": "node database/generate.js"
   },
   "dependencies": {
     "antd": "^3.13.2",
@@ -21,6 +22,7 @@
     "bootstrap": "^4.2.1",
     "cors": "^2.8.5",
     "express": "^4.16.4",
+    "faker": "^4.1.0",
     "jest-enzyme": "^7.0.1",
     "jquery": "^3.3.1",
     "mysql": "^2.16.0",
