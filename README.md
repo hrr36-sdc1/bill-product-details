@@ -30,7 +30,7 @@ Abibas is a recreation of Adidas that designs and manufactures shoes, clothing, 
 
 | Name | Type | Description |
 |------|------|-------------|
-| Listing ID | integer | Id of this "look" and the related shoe |
+| Look ID | integer | Id of this "look" and the related shoe |
 
 ---
 
