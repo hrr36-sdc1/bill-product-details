@@ -4,14 +4,14 @@ const dbPw = process.env.DB_PW || require('../config.js').pw;
 
 const db = new Sequelize('adidas', dbUser, dbPw, {
   host: 'localhost',
-  dialect: 'mysql',
+  dialect: 'postgres',
   define: {
     timestamps: false,
   },
 });
 
-const Shoes = db.define('Shoes', {
-  id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
+const Shoes = db.define('shoes', {
+  id: { type: Sequelize.INTEGER, primaryKey: true },
   name: Sequelize.STRING,
   img_url: Sequelize.STRING,
   short_desc: Sequelize.STRING,
@@ -23,8 +23,8 @@ const Shoes = db.define('Shoes', {
   details: Sequelize.STRING(1000),
 });
 
-const Looks = db.define('Looks', {
-  id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
+const Looks = db.define('looks', {
+  id: { type: Sequelize.INTEGER, primaryKey: true },
   pant_name: Sequelize.STRING,
   pant_url: Sequelize.STRING,
   pant_price: Sequelize.INTEGER,
@@ -36,8 +36,8 @@ const Looks = db.define('Looks', {
   jacket_price: Sequelize.INTEGER,
 });
 
-const Shares = db.define('Shares', {
-  id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
+const Shares = db.define('shares', {
+  id: { type: Sequelize.INTEGER, primaryKey: true },
   user1: Sequelize.STRING,
   img1: Sequelize.STRING,
   user2: Sequelize.STRING,

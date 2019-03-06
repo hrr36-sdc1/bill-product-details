@@ -29,8 +29,10 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const id = Math.floor(Math.random() * (101));
-    this.getOne(11);
+    // const id = Math.floor(Math.random() * (101));
+    // this.getOne(11);
+    const id = 5;
+    this.getOne(5);
   }
 
   getAll() {

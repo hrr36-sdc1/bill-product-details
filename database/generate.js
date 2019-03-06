@@ -1,10 +1,12 @@
+const {db, Looks} = require('./index.js');
 var faker = require('faker');
 var fs = require('fs');
+
 
 /*
 // DB definition schema - Looks
 const Looks = db.define('Looks', {
-  id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
+  id: { type: Sequelize.INTEGER, primaryKey: true},
   pant_name: Sequelize.STRING,
   pant_url: Sequelize.STRING,
   pant_price: Sequelize.INTEGER,
@@ -110,20 +112,31 @@ var loadLookObjs = (numBatches, perBatch) => {
     createNLookObjs(perBatch, startingIndex);
     // load the looksArr into the database
     //console.log(JSON.stringify(looksArr));
+    Looks.bulkCreate(looksArr)
+    .then(() => {
+      //console.log('Successfully added Looks');
+    })
+    .catch(err => {
+      console.log('In catch');
+      console.log('ERROR: ', err);
+    })
   }
 }
 
-console.log('starting -----')
-console.time('createAndWriteData');
-// Refactoring to re-use the same array and objects
+
 // looksObj is now a global array declared above
 // Total number of objects to generate
-let totalToGenerate = 10000000;
+let totalToGenerate = 1000;
 // Total number of objects before recycling; assume divides equally into TotalToGenerate
-let totalPerBatch = 10000;
+let totalPerBatch = 100;
+
+console.log(`totalToGenerate = ${totalToGenerate}, totalPerBatch = ${totalPerBatch}, Batches = ${totalToGenerate/totalPerBatch}`);
+console.log('starting -----')
+console.time('createAndWriteData');
+
 // load 
 loadLookObjs(totalToGenerate/totalPerBatch, totalPerBatch);
-console.log(`totalToGenerate = ${totalToGenerate}, totalPerBatch = ${totalPerBatch}, Batches = ${totalToGenerate/totalPerBatch}`);
+
 
 //str = JSON.stringify(finalLooksArr);
 
