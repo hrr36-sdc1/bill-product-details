@@ -22,16 +22,16 @@ Abibas is a recreation of Adidas that designs and manufactures shoes, clothing, 
 
 `GET` /looks/:id
 
-`POST` /looks/:id
+`POST` /look  (+ Post Object)
 
 `DELETE` /looks/:id
 
 #### Parameters
 
-| Name | Type | Description |
-|------|------|-------------|
-| Look ID | integer | Id of this "look" and the related shoe |
-
+| Name        | Type                | Description                                                |
+|-------------|---------------------|------------------------------------------------------------|
+| Look ID     | integer             | Id of this "look" and the related shoe                     |
+| Post Object | JSON "looks" object | A raw jason "looks" object passed in with the POST request |
 ---
 
 
