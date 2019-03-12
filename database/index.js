@@ -8,6 +8,11 @@ const db = new Sequelize('adidas', dbUser, dbPw, {
   define: {
     timestamps: false,
   },
+  pool: {
+    max: 10,
+    min: 2,
+    idle: 10000
+  }
 });
 
 const Shoes = db.define('shoes', {

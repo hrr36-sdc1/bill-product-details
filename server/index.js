@@ -1,9 +1,12 @@
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
+const bodyParser = require('body-parser')
 const app = express();
 const { db , Shoes, Looks, Shares } = require('../database');
 
+app.use(bodyParser.json()); // to handle postman data in post
+app.use(bodyParser.urlencoded({ extended: true })); // not really needed, but putting it here in case I want to add a form-based submit of a record
 app.use(express.static(__dirname + '/../public'));
 app.use(cors({
   'origin': '*',
@@ -23,18 +26,16 @@ let randomImg = () => {
 
 db.authenticate()
   .then(() => {
-    console.log('Connection successful!');
+    console.log('Connection to db successful!');
   })
   .catch(err => {
-    console.error('Connection failed: ', err);
+    console.error('Connection to db failed: ', err);
   })
 
 app.get('/shoes', (req,res) => {
+  console.log('GET: shoes');
   let arr = randomImg()
-  Shoes.sync()
-    .then(() => {
-      return Shoes.findAll({where : {id : [arr]}});
-    })
+  Shoes.findAll({where : {id : [arr]}})
     .then(shoes => {
       res.json(shoes);
     })
@@ -45,10 +46,7 @@ app.get('/shoes', (req,res) => {
 
 app.get('/shoes/:shoeId', (req,res) => {
   let id = Number(req.params.shoeId);
-  Shoes.sync()
-  .then(() => {
-    return Shoes.findOne({where: {id: id}});
-  })
+  Shoes.findOne({where: {id: id}})
   .then(shoe => {
     res.json(shoe);
   })
@@ -57,12 +55,10 @@ app.get('/shoes/:shoeId', (req,res) => {
   })
 })
 
+// looks get by id
 app.get('/looks/:id', (req,res) => {
   let id = Number(req.params.id);
-  Looks.sync()
-  .then(() => {
-    return Looks.findOne({where: {id: id}});
-  })
+  Looks.findOne({where: {id: id}})
   .then(look => {
     res.json(look);
   })
@@ -71,12 +67,64 @@ app.get('/looks/:id', (req,res) => {
   })
 })
 
+// looks post a new look item
+// consider whether I can add defaults to this in
+// case some fields aren't provided?
+app.post('/looks', (req,res) => {
+  console.log('POST looks')
+  //console.log(req.body);
+  Looks.upsert(req.body)
+  .then((test) => {
+      if (test) {
+        res.status(200);
+        res.send("Successfully created");
+      } else {
+      res.status(200);
+      res.send("Successfully updated");
+      }
+  })
+  .catch((err) => {
+    console.log('error', err);
+  })
+})
+
+// const Looks = db.define('looks', {
+//   id: { type: Sequelize.INTEGER, primaryKey: true },
+//   pant_name: Sequelize.STRING,
+//   pant_url: Sequelize.STRING,
+//   pant_price: Sequelize.INTEGER,
+//   shirt_name: Sequelize.STRING,
+//   shirt_url: Sequelize.STRING,
+//   shirt_price: Sequelize.INTEGER,
+//   jacket_name: Sequelize.STRING,
+//   jacket_url: Sequelize.STRING,
+//   jacket_price: Sequelize.INTEGER,
+// });
+
+//looks delete by id
+app.delete('/looks/:id', (req,res) => {
+  let id = Number(req.params.id);
+  Looks.destroy({where: {id: id}})
+  .then(rowsDeleted => {
+    res.sendStatus(200);
+    // if (rowsDeleted) {
+    //   let ackStr = `${rowsDeleted} row(s) deleted: ${id}`;
+    //   console.log(ackStr);
+    //   res.json(200, ackStr);
+    // } else {
+    //   let errStr = `id ${id} not found. ${rowsDeleted} rows deleted.`;
+    //   console.log(errStr);
+    //   res.json(200, errStr);
+    // }
+  })
+  .catch(err => {
+    console.log('error', err);
+  })
+})
+
 app.get('/shares/:id', (req,res) => {
   let id = Number(req.params.id);
-  Shares.sync()
-  .then(() => {
-    return Shares.findOne({where: {id: id}});
-  })
+  Shares.findOne({where: {id: id}})
   .then(share => {
     res.json(share);
   })
