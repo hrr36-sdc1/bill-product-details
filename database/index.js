@@ -15,18 +15,6 @@ const db = new Sequelize('adidas', dbUser, dbPw, {
   }
 });
 
-const Shoes = db.define('shoes', {
-  id: { type: Sequelize.INTEGER, primaryKey: true },
-  name: Sequelize.STRING,
-  img_url: Sequelize.STRING,
-  short_desc: Sequelize.STRING,
-  long_desc: Sequelize.STRING(1000),
-  type: Sequelize.STRING,
-  price: Sequelize.INTEGER,
-  rating: Sequelize.DECIMAL,
-  review_count: Sequelize.INTEGER,
-  details: Sequelize.STRING(1000),
-});
 
 const Looks = db.define('looks', {
   id: { type: Sequelize.INTEGER, primaryKey: true },
@@ -41,21 +29,6 @@ const Looks = db.define('looks', {
   jacket_price: Sequelize.INTEGER,
 });
 
-const Shares = db.define('shares', {
-  id: { type: Sequelize.INTEGER, primaryKey: true },
-  user1: Sequelize.STRING,
-  img1: Sequelize.STRING,
-  user2: Sequelize.STRING,
-  img2: Sequelize.STRING,
-  user3: Sequelize.STRING,
-  img3: Sequelize.STRING,
-  user4: Sequelize.STRING,
-  img4: Sequelize.STRING,
-  user5: Sequelize.STRING,
-  img5: Sequelize.STRING,
-});
 
 module.exports.db = db;
-module.exports.Shoes = Shoes;
 module.exports.Looks = Looks;
-module.exports.Shares = Shares;

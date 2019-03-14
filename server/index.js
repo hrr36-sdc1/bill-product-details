@@ -1,28 +1,33 @@
 const express = require('express');
-const mysql = require('mysql');
+//const mysql = require('mysql');
 const cors = require('cors');
 const bodyParser = require('body-parser')
 const app = express();
-const { db , Shoes, Looks, Shares } = require('../database');
+const { db , Looks } = require('../database');
 
-app.use(bodyParser.json()); // to handle postman data in post
-app.use(bodyParser.urlencoded({ extended: true })); // not really needed, but putting it here in case I want to add a form-based submit of a record
+
 app.use(express.static(__dirname + '/../public'));
+
 app.use(cors({
   'origin': '*',
 }));
 
+ // to handle postman data in post
+app.use(bodyParser.json());
+// not really needed, but putting it here in case I want to add a form-based submit of a record
+//app.use(bodyParser.urlencoded({ extended: true })); 
+
 let randomId = () => {
-  return Math.floor(Math.random() * (101));
+  return Math.floor(Math.random() * (9999990));  //I've deleted some from end and haven't reloaded the data
 }
 
-let randomImg = () => {
-  var arr = [];
-  for (var i = 0; i < 18; i++) {
-    arr.push(Math.floor(Math.random() * (101)))
-  }
-  return arr;
-}
+// let randomImg = () => {
+//   var arr = [];
+//   for (var i = 0; i < 18; i++) {
+//     arr.push(Math.floor(Math.random() * (101)))
+//   }
+//   return arr;
+// }
 
 db.authenticate()
   .then(() => {
@@ -32,28 +37,28 @@ db.authenticate()
     console.error('Connection to db failed: ', err);
   })
 
-app.get('/shoes', (req,res) => {
-  console.log('GET: shoes');
-  let arr = randomImg()
-  Shoes.findAll({where : {id : [arr]}})
-    .then(shoes => {
-      res.json(shoes);
-    })
-    .catch(err => {
-      console.log(err);
-    })
-})
+// app.get('/shoes', (req,res) => {
+//   console.log('GET: shoes');
+//   let arr = randomImg()
+//   Shoes.findAll({where : {id : [arr]}})
+//     .then(shoes => {
+//       res.json(shoes);
+//     })
+//     .catch(err => {
+//       console.log(err);
+//     })
+// })
 
-app.get('/shoes/:shoeId', (req,res) => {
-  let id = Number(req.params.shoeId);
-  Shoes.findOne({where: {id: id}})
-  .then(shoe => {
-    res.json(shoe);
-  })
-  .catch(err => {
-    console.log('ERROR: ', err);
-  })
-})
+// app.get('/shoes/:shoeId', (req,res) => {
+//   let id = Number(req.params.shoeId);
+//   Shoes.findOne({where: {id: id}})
+//   .then(shoe => {
+//     res.json(shoe);
+//   })
+//   .catch(err => {
+//     console.log('ERROR: ', err);
+//   })
+// })
 
 // looks get by id
 app.get('/looks/:id', (req,res) => {
@@ -68,6 +73,7 @@ app.get('/looks/:id', (req,res) => {
 })
 
 // looks post a new look item
+// Supports partial updates by passing in only the id and fields to update
 // consider whether I can add defaults to this in
 // case some fields aren't provided?
 app.post('/looks', (req,res) => {
@@ -88,18 +94,6 @@ app.post('/looks', (req,res) => {
   })
 })
 
-// const Looks = db.define('looks', {
-//   id: { type: Sequelize.INTEGER, primaryKey: true },
-//   pant_name: Sequelize.STRING,
-//   pant_url: Sequelize.STRING,
-//   pant_price: Sequelize.INTEGER,
-//   shirt_name: Sequelize.STRING,
-//   shirt_url: Sequelize.STRING,
-//   shirt_price: Sequelize.INTEGER,
-//   jacket_name: Sequelize.STRING,
-//   jacket_url: Sequelize.STRING,
-//   jacket_price: Sequelize.INTEGER,
-// });
 
 //looks delete by id
 app.delete('/looks/:id', (req,res) => {
@@ -107,31 +101,22 @@ app.delete('/looks/:id', (req,res) => {
   Looks.destroy({where: {id: id}})
   .then(rowsDeleted => {
     res.sendStatus(200);
-    // if (rowsDeleted) {
-    //   let ackStr = `${rowsDeleted} row(s) deleted: ${id}`;
-    //   console.log(ackStr);
-    //   res.json(200, ackStr);
-    // } else {
-    //   let errStr = `id ${id} not found. ${rowsDeleted} rows deleted.`;
-    //   console.log(errStr);
-    //   res.json(200, errStr);
-    // }
   })
   .catch(err => {
     console.log('error', err);
   })
 })
 
-app.get('/shares/:id', (req,res) => {
-  let id = Number(req.params.id);
-  Shares.findOne({where: {id: id}})
-  .then(share => {
-    res.json(share);
-  })
-  .catch( err => {
-    console.log('err', err)
-  })
-})
+// app.get('/shares/:id', (req,res) => {
+//   let id = Number(req.params.id);
+//   Shares.findOne({where: {id: id}})
+//   .then(share => {
+//     res.json(share);
+//   })
+//   .catch( err => {
+//     console.log('err', err)
+//   })
+// })
 
 const PORT = 8001;
 
