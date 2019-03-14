@@ -2538,6 +2538,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 11,
     "user1": "shaquille_oatmeal",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share1.jpg",
     "user2": "plantifulsoul",
@@ -2550,6 +2551,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share5.jpg"
   },
   {
+    "id": 12,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share4.jpg",
     "user2": "indigosparkle",
@@ -2562,6 +2564,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 13,
     "user1": "shaquille_oatmeal",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg",
     "user2": "indigosparkle",
@@ -2574,6 +2577,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share1.jpg"
   },
   {
+    "id": 14,
     "user1": "shaquille_oatmeal",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg",
     "user2": "indigosparkle",
@@ -2586,6 +2590,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 15,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share4.jpg",
     "user2": "indigosparkle",
@@ -2598,6 +2603,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 16,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share5.jpg",
     "user2": "adidasaddict",
@@ -2610,6 +2616,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 17,
     "user1": "shaquille_oatmeal",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share6.jpg",
     "user2": "iamstellar",
@@ -2622,6 +2629,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 18,
     "user1": "sincerelyabibas",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share7.jpg",
     "user2": "champagnefabulous",
@@ -2634,6 +2642,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 19,
     "user1": "rainbowsalt",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg",
     "user2": "champagnefabulous",
@@ -2646,6 +2655,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 20,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg",
     "user2": "shaquille_oatmeal",
@@ -2658,6 +2668,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 21,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share1.jpg",
     "user2": "indigosparkle",
@@ -2670,6 +2681,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share5.jpg"
   },
   {
+    "id": 22,
     "user1": "sincerelyabibas",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share4.jpg",
     "user2": "sunshinemagic",
@@ -2682,6 +2694,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 23,
     "user1": "sincerelyabibas",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg",
     "user2": "indigosparkle",
@@ -2694,6 +2707,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share1.jpg"
   },
   {
+    "id": 24,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg",
     "user2": "sunshinemagic",
@@ -2706,6 +2720,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 25,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share4.jpg",
     "user2": "plantifulsoul",
@@ -2718,6 +2733,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 26,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share5.jpg",
     "user2": "adidasaddict",
@@ -2730,6 +2746,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 27,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share6.jpg",
     "user2": "adidasaddict",
@@ -2742,6 +2759,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 28,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share7.jpg",
     "user2": "indigosparkle",
@@ -2754,6 +2772,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 29,
     "user1": "true.living",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg",
     "user2": "adidasaddict",
@@ -2766,6 +2785,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 30,
     "user1": "rainbowsalt",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg",
     "user2": "champagnefabulous",
@@ -2778,6 +2798,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 31,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share1.jpg",
     "user2": "champagnefabulous",
@@ -2790,6 +2811,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share5.jpg"
   },
   {
+    "id": 32,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share4.jpg",
     "user2": "champagnefabulous",
@@ -2802,6 +2824,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 33,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg",
     "user2": "adidasaddict",
@@ -2814,6 +2837,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share1.jpg"
   },
   {
+    "id": 34,
     "user1": "true.living",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg",
     "user2": "indigosparkle",
@@ -2826,6 +2850,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 35,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share4.jpg",
     "user2": "adidasaddict",
@@ -2838,6 +2863,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 36,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share5.jpg",
     "user2": "sunshinemagic",
@@ -2850,6 +2876,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 37,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share6.jpg",
     "user2": "sunshinemagic",
@@ -2862,6 +2889,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 38,
     "user1": "true.living",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share7.jpg",
     "user2": "champagnefabulous",
@@ -2874,6 +2902,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 39,
     "user1": "true.living",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg",
     "user2": "indigosparkle",
@@ -2886,6 +2915,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 40,
     "user1": "rainbowsalt",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg",
     "user2": "adidasaddict",
@@ -2898,6 +2928,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 41,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share1.jpg",
     "user2": "adidasaddict",
@@ -2910,6 +2941,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share5.jpg"
   },
   {
+    "id": 42,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share4.jpg",
     "user2": "adidasaddict",
@@ -2922,6 +2954,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 43,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg",
     "user2": "sunshinemagic",
@@ -2934,6 +2967,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share1.jpg"
   },
   {
+    "id": 44,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg",
     "user2": "sunshinemagic",
@@ -2946,6 +2980,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 45,
     "user1": "rainbowsalt",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share4.jpg",
     "user2": "indigosparkle",
@@ -2958,6 +2993,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 46,
     "user1": "true.living",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share5.jpg",
     "user2": "plantifulsoul",
@@ -2970,6 +3006,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 47,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share6.jpg",
     "user2": "champagnefabulous",
@@ -2982,6 +3019,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 48,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share7.jpg",
     "user2": "adidasaddict",
@@ -2994,6 +3032,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 49,
     "user1": "true.living",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg",
     "user2": "adidasaddict",
@@ -3006,6 +3045,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 50,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg",
     "user2": "sunshinemagic",
@@ -3018,6 +3058,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 51,
     "user1": "rainbowsalt",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share1.jpg",
     "user2": "sunshinemagic",
@@ -3030,6 +3071,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share5.jpg"
   },
   {
+    "id": 52,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share4.jpg",
     "user2": "champagnefabulous",
@@ -3042,6 +3084,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 53,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg",
     "user2": "adidasaddict",
@@ -3054,6 +3097,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share1.jpg"
   },
   {
+    "id": 54,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg",
     "user2": "indigosparkle",
@@ -3066,6 +3110,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 55,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share4.jpg",
     "user2": "iamstellar",
@@ -3078,6 +3123,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 56,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share5.jpg",
     "user2": "anonymouse",
@@ -3090,6 +3136,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 57,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share6.jpg",
     "user2": "adidasaddict",
@@ -3102,6 +3149,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 58,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share7.jpg",
     "user2": "adidasaddict",
@@ -3114,6 +3162,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 59,
     "user1": "rainbowsalt",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg",
     "user2": "champagnefabulous",
@@ -3126,6 +3175,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 60,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg",
     "user2": "iamstellar",
@@ -3138,6 +3188,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 61,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share1.jpg",
     "user2": "iamstellar",
@@ -3150,6 +3201,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share5.jpg"
   },
   {
+    "id": 62,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share4.jpg",
     "user2": "iamstellar",
@@ -3162,6 +3214,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 63,
     "user1": "rainbowsalt",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg",
     "user2": "iamstellar",
@@ -3174,6 +3227,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share1.jpg"
   },
   {
+    "id": 64,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg",
     "user2": "champagnefabulous",
@@ -3186,6 +3240,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 65,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share4.jpg",
     "user2": "anonymouse",
@@ -3198,6 +3253,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 66,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share5.jpg",
     "user2": "adidasaddict",
@@ -3210,6 +3266,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 67,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share6.jpg",
     "user2": "champagnefabulous",
@@ -3222,6 +3279,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 68,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share7.jpg",
     "user2": "iamstellar",
@@ -3234,6 +3292,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 69,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg",
     "user2": "champagnefabulous",
@@ -3246,6 +3305,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 70,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg",
     "user2": "adidasaddict",
@@ -3258,6 +3318,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 71,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share1.jpg",
     "user2": "adidasaddict",
@@ -3270,6 +3331,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share5.jpg"
   },
   {
+    "id": 72,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share4.jpg",
     "user2": "adidasaddict",
@@ -3282,6 +3344,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 73,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg",
     "user2": "iamstellar",
@@ -3294,6 +3357,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share1.jpg"
   },
   {
+    "id": 74,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg",
     "user2": "iamstellar",
@@ -3306,6 +3370,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 75,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share4.jpg",
     "user2": "adidasaddict",
@@ -3318,6 +3383,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 76,
     "user1": "rainbowsalt",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share5.jpg",
     "user2": "adidasaddict",
@@ -3330,6 +3396,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 77,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share6.jpg",
     "user2": "champagnefabulous",
@@ -3342,6 +3409,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 78,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share7.jpg",
     "user2": "champagnefabulous",
@@ -3354,6 +3422,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 79,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg",
     "user2": "iamstellar",
@@ -3366,6 +3435,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 80,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg",
     "user2": "adidasaddict",
@@ -3378,6 +3448,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 81,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share1.jpg",
     "user2": "adidasaddict",
@@ -3390,6 +3461,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share5.jpg"
   },
   {
+    "id": 82,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share4.jpg",
     "user2": "iamstellar",
@@ -3402,6 +3474,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 83,
     "user1": "rainbowsalt",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg",
     "user2": "indigosparkle",
@@ -3414,6 +3487,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share1.jpg"
   },
   {
+    "id": 84,
     "user1": "anonymouse",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg",
     "user2": "indigosparkle",
@@ -3426,6 +3500,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 85,
     "user1": "anonymouse",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share4.jpg",
     "user2": "indigosparkle",
@@ -3438,6 +3513,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 86,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share5.jpg",
     "user2": "indigosparkle",
@@ -3450,6 +3526,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 87,
     "user1": "rainbowsalt",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share6.jpg",
     "user2": "indigosparkle",
@@ -3462,6 +3539,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 88,
     "user1": "rainbowsalt",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share7.jpg",
     "user2": "indigosparkle",
@@ -3474,6 +3552,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 89,
     "user1": "rainbowsalt",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg",
     "user2": "iamstellar",
@@ -3486,6 +3565,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 90,
     "user1": "rainbowsalt",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg",
     "user2": "champagnefabulous",
@@ -3498,6 +3578,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 91,
     "user1": "rainbowsalt",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share1.jpg",
     "user2": "champagnefabulous",
@@ -3510,6 +3591,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share5.jpg"
   },
   {
+    "id": 92,
     "user1": "rainbowsalt",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share4.jpg",
     "user2": "adidasaddict",
@@ -3522,6 +3604,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 93,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg",
     "user2": "iamstellar",
@@ -3534,6 +3617,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share1.jpg"
   },
   {
+    "id": 94,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg",
     "user2": "iamstellar",
@@ -3546,6 +3630,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 95,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share4.jpg",
     "user2": "adidasaddict",
@@ -3558,6 +3643,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 96,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share5.jpg",
     "user2": "adidasaddict",
@@ -3570,6 +3656,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg"
   },
   {
+    "id": 97,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share6.jpg",
     "user2": "indigosparkle",
@@ -3582,6 +3669,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 98,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share7.jpg",
     "user2": "indigosparkle",
@@ -3594,6 +3682,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 99,
     "user1": "weareliving",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share2.jpg",
     "user2": "indigosparkle",
@@ -3606,6 +3695,7 @@ let sampleShares = [
     "img5": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg"
   },
   {
+    "id": 100,
     "user1": "iamcool",
     "img1": "https://s3-us-west-1.amazonaws.com/adidas-shoe/share3.jpg",
     "user2": "adidasaddict",
@@ -3628,13 +3718,13 @@ const insertSeed = () => {
     console.log('ERROR: ', err);
   })
 
-  Looks.bulkCreate(sampleLooks)
-  .then(() => {
-    console.log('SUCCESS looks added');
-  })
-  .catch(err => {
-    console.log('ERROR: ', err);
-  })
+  // Looks.bulkCreate(sampleLooks)
+  // .then(() => {
+  //   console.log('SUCCESS looks added');
+  // })
+  // .catch(err => {
+  //   console.log('ERROR: ', err);
+  // })
 
   Shares.bulkCreate(sampleShares)
   .then(() => {

@@ -1,0 +1,98 @@
+adidas=# \copy looks(id, pant_name, pant_url, pant_price, shirt_name, shirt_url, shirt_price, jacket_name, jacket_url, jacket_price) from '/Users/bmortimer/dev/sdc/bill-product-details/database/looksdata.csv' with csv;
+
+  adidas=# select * from looks where id = 20;
+-[ RECORD 1 ]+------------------------------------------------
+id           | 20
+pant_name    | DYNAMIC TIGHTS
+pant_url     | https://loremflickr.com/295/295/pants?random20
+pant_price   | 57
+shirt_name   | GRAPHIC HENLEY
+shirt_url    | https://loremflickr.com/295/295/shirt?random20
+shirt_price  | 26
+jacket_name  | 24 SHELL
+jacket_url   | https://loremflickr.com/295/295/jacket?random20
+jacket_price | 159
+
+adidas=# select * from looks where pant_name = 'SKI JOGGERS';
+-[ RECORD 1 ]+-----------------------------------------------
+id           | 3
+pant_name    | SKI JOGGERS
+pant_url     | https://loremflickr.com/295/295/pants?random3
+pant_price   | 113
+shirt_name   | TREFOIL HENLEY
+shirt_url    | https://loremflickr.com/295/295/shirt?random3
+shirt_price  | 104
+jacket_name  | DOWN SWEATER
+jacket_url   | https://loremflickr.com/295/295/jacket?random3
+jacket_price | 125
+
+
+adidas=# delete from looks;
+DELETE 0
+Time: 0.267 ms
+
+Hulk:bill-product-details bmortimer$ npm run generate
+
+> adidas-product-specs@1.0.0 generate /Users/bmortimer/dev/sdc/bill-product-details
+> node database/generate.js
+
+sequelize deprecated String based operators are now deprecated. Please use Symbol based operators for better security, read more at http://docs.sequelizejs.com/manual/tutorial/querying.html#operators node_modules/sequelize/lib/sequelize.js:242:13
+starting -----
+createAndWriteData: 285255.207ms
+
+
+adidas=# \copy looks(id, pant_name, pant_url, pant_price, shirt_name, shirt_url, shirt_price, jacket_name, jacket_url, jacket_price) from '/Users/bmortimer/dev/sdc/bill-product-details/database/looksdata.csv' with csv;
+2019-03-06 21:05:27.763 PST [12219] LOG:  checkpoints are occurring too frequently (17 seconds apart)
+2019-03-06 21:05:27.763 PST [12219] HINT:  Consider increasing the configuration parameter "max_wal_size".
+2019-03-06 21:05:40.579 PST [12219] LOG:  checkpoints are occurring too frequently (13 seconds apart)
+2019-03-06 21:05:40.579 PST [12219] HINT:  Consider increasing the configuration parameter "max_wal_size".
+2019-03-06 21:05:53.575 PST [12219] LOG:  checkpoints are occurring too frequently (13 seconds apart)
+2019-03-06 21:05:53.575 PST [12219] HINT:  Consider increasing the configuration parameter "max_wal_size".
+COPY 10000000
+Time: 63442.652 ms (01:03.443)
+
+
+adidas=# select * from looks where id = 10000000;
+-[ RECORD 1 ]+------------------------------------------------------
+id           | 10000000
+pant_name    | RUSTIC FOOTBALL PANTS
+pant_url     | https://loremflickr.com/295/295/pants?random10000000
+pant_price   | 57
+shirt_name   | USERS POLO
+shirt_url    | https://loremflickr.com/295/295/shirt?random10000000
+shirt_price  | 82
+jacket_name  | TURKEY FULL-ZIP HOODIE
+jacket_url   | https://loremflickr.com/295/295/jacket?random10000000
+jacket_price | 154
+
+Time: 7.840 ms
+
+adidas=# select * from looks where id = 9876543;
+-[ RECORD 1 ]+-----------------------------------------------------
+id           | 9876543
+pant_name    | PRIMARY ATHLETIC SWEATPANTS
+pant_url     | https://loremflickr.com/295/295/pants?random9876543
+pant_price   | 63
+shirt_name   | PERFORMANCE CREW
+shirt_url    | https://loremflickr.com/295/295/shirt?random9876543
+shirt_price  | 99
+jacket_name  | BASKETBALL SWEATSHIRT
+jacket_url   | https://loremflickr.com/295/295/jacket?random9876543
+jacket_price | 125
+
+Time: 0.459 ms
+
+adidas=# SELECT * FROM looks WHERE jacket_name LIKE '%HOODIE%' LIMIT 1;
+-[ RECORD 1 ]+-----------------------------------------------
+id           | 8
+pant_name    | AUXILIARY TERRY PANTS
+pant_url     | https://loremflickr.com/295/295/pants?random8
+pant_price   | 85
+shirt_name   | CAR CREW
+shirt_url    | https://loremflickr.com/295/295/shirt?random8
+shirt_price  | 122
+jacket_name  | CUBAN HOODIE
+jacket_url   | https://loremflickr.com/295/295/jacket?random8
+jacket_price | 156
+
+Time: 0.382 ms

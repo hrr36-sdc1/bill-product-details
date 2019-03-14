@@ -20,17 +20,19 @@ Abibas is a recreation of Adidas that designs and manufactures shoes, clothing, 
 ---
 #### Related "LOOKS" Module
 
-`GET` /looks/:id
+`GET` /looks/:id   - Get a "looks" record with the specified ID
 
-`POST` /looks/:id
+`POST` /look  (+ Post Object)  - Create the object if it doesn't exist, update it if it does
 
-`DELETE` /looks/:id
+`DELETE` /looks/:id  - Delete a "looks" record with the specified ID
 
 #### Parameters
 
-| Name | Type | Description |
-|------|------|-------------|
-| Look ID | integer | Id of this "look" and the related shoe |
+| Name        | Type                | Description                                                |
+|-------------|---------------------|------------------------------------------------------------|
+| Look ID     | integer             | Id of this "look" and the related shoe                     |
+| Post Object | JSON "looks" object | A raw jason "looks" object passed in with the POST request |
+|             |                     | (Updates to a record can contain just the fields to update)|
 
 ---
 

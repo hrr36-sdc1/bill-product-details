@@ -1,0 +1,20 @@
+cqlsh:adidas> select * from looks where id = 9876543;
+
+ id      | jacket_name           | jacket_price | jacket_url                                           | pant_name                   | pant_price | pant_url                                            | shirt_name       | shirt_price | shirt_url
+---------+-----------------------+--------------+------------------------------------------------------+-----------------------------+------------+-----------------------------------------------------+------------------+-------------+-----------------------------------------------------
+ 9876543 | BASKETBALL SWEATSHIRT |          125 | https://loremflickr.com/295/295/jacket?random9876543 | PRIMARY ATHLETIC SWEATPANTS |         63 | https://loremflickr.com/295/295/pants?random9876543 | PERFORMANCE CREW |          99 | https://loremflickr.com/295/295/shirt?random9876543
+
+(1 rows)
+
+Tracing session: 3a3521e0-413a-11e9-bf6e-b1f5cf1ee36a
+
+ activity                                                                      | timestamp                  | source    | source_elapsed | client
+-------------------------------------------------------------------------------+----------------------------+-----------+----------------+-----------
+                                                            Execute CQL3 query | 2019-03-07 16:36:35.198000 | 127.0.0.1 |              0 | 127.0.0.1
+ Parsing select * from looks where id = 9876543; [Native-Transport-Requests-1] | 2019-03-07 16:36:35.198000 | 127.0.0.1 |            140 | 127.0.0.1
+                             Preparing statement [Native-Transport-Requests-1] | 2019-03-07 16:36:35.198000 | 127.0.0.1 |            247 | 127.0.0.1
+                       Executing single-partition query on looks [ReadStage-2] | 2019-03-07 16:36:35.198000 | 127.0.0.1 |            480 | 127.0.0.1
+                                    Acquiring sstable references [ReadStage-2] | 2019-03-07 16:36:35.198000 | 127.0.0.1 |            534 | 127.0.0.1
+                                       Merging memtable contents [ReadStage-2] | 2019-03-07 16:36:35.198000 | 127.0.0.1 |            600 | 127.0.0.1
+                          Read 1 live rows and 0 tombstone cells [ReadStage-2] | 2019-03-07 16:36:35.199000 | 127.0.0.1 |            769 | 127.0.0.1
+                                                              Request complete | 2019-03-07 16:36:35.198921 | 127.0.0.1 |            921 | 127.0.0.1
