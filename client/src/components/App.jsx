@@ -25,7 +25,7 @@ class App extends Component {
 
 
   getLooks(id) {
-    axios.get(`http://ec2-54-92-132-30.compute-1.amazonaws.com:8001/looks/${id}`)
+    axios.get(`http://ip-172-31-43-110.ec2.internal:8001/looks/${id}`)
     .then( looks => {
       looks = looks.data;
       this.setState({ looks });
