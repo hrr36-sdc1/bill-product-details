@@ -26,9 +26,12 @@ let randomId = () => {
 db.authenticate()
   .then(() => {
     console.log('Connection to db successful!');
-    Looks.findOne(where: {id: 999})
+    Looks.findOne({where: {id: id}})
     .then(look => {
       console.log(look);
+    })
+    .catch(err => {
+      console.log('error', err);
     })
   })
   .catch(err => {
