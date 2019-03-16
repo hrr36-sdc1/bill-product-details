@@ -2,8 +2,8 @@ const Sequelize = require('sequelize');
 const dbUser = process.env.DB_USER || require('../config.js').user;
 const dbPw = process.env.DB_PW || require('../config.js').pw;
 
-const db = new Sequelize('adidas', dbUser, dbPw, {
   //host: 'ec2-54-92-132-30.compute-1.amazonaws.com',
+const db = new Sequelize('adidas', dbUser, dbPw, {
   host: 'ip-172-31-43-110.ec2.internal',
   dialect: 'postgres',
   logging: false,
