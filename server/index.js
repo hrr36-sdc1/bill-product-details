@@ -26,13 +26,6 @@ let randomId = () => {
 db.authenticate()
   .then(() => {
     console.log('Connection to db successful!');
-    Looks.findOne({where: {id: id}})
-    .then(look => {
-      console.log(look);
-    })
-    .catch(err => {
-      console.log('error', err);
-    })
   })
   .catch(err => {
     console.error('Connection to db failed: ', err);
@@ -42,6 +35,7 @@ db.authenticate()
 // looks get by id
 app.get('/looks/:id', (req,res) => {
   let id = Number(req.params.id);
+  console.log('GET looks ' + id);
   Looks.findOne({where: {id: id}})
   .then(look => {
     res.json(look);
