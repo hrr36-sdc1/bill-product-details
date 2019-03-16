@@ -1,6 +1,7 @@
 .env
 public/bundle.js
 config.js
+newrelic.js
 ## MAC files ##
 .DS_Store
 

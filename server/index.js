@@ -1,3 +1,4 @@
+const newrelic = require('newrelic');
 const express = require('express');
 //const mysql = require('mysql');
 const cors = require('cors');
@@ -21,13 +22,6 @@ let randomId = () => {
   return Math.floor(Math.random() * (9999990));  //I've deleted some from end and haven't reloaded the data
 }
 
-// let randomImg = () => {
-//   var arr = [];
-//   for (var i = 0; i < 18; i++) {
-//     arr.push(Math.floor(Math.random() * (101)))
-//   }
-//   return arr;
-// }
 
 db.authenticate()
   .then(() => {
@@ -37,28 +31,6 @@ db.authenticate()
     console.error('Connection to db failed: ', err);
   })
 
-// app.get('/shoes', (req,res) => {
-//   console.log('GET: shoes');
-//   let arr = randomImg()
-//   Shoes.findAll({where : {id : [arr]}})
-//     .then(shoes => {
-//       res.json(shoes);
-//     })
-//     .catch(err => {
-//       console.log(err);
-//     })
-// })
-
-// app.get('/shoes/:shoeId', (req,res) => {
-//   let id = Number(req.params.shoeId);
-//   Shoes.findOne({where: {id: id}})
-//   .then(shoe => {
-//     res.json(shoe);
-//   })
-//   .catch(err => {
-//     console.log('ERROR: ', err);
-//   })
-// })
 
 // looks get by id
 app.get('/looks/:id', (req,res) => {
