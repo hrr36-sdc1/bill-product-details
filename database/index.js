@@ -3,8 +3,9 @@ const dbUser = process.env.DB_USER || require('../config.js').user;
 const dbPw = process.env.DB_PW || require('../config.js').pw;
 
 const db = new Sequelize('adidas', dbUser, dbPw, {
-  host: 'localhost',
+  host: 'ec2-54-92-132-30.compute-1.amazonaws.com',
   dialect: 'postgres',
+  logging: false,
   define: {
     timestamps: false,
   },
@@ -14,6 +15,20 @@ const db = new Sequelize('adidas', dbUser, dbPw, {
     idle: 10000
   }
 });
+
+// const db = new Sequelize('adidas', dbUser, dbPw, {
+//   host: 'localhost',
+//   dialect: 'postgres',
+//   logging: true,
+//   define: {
+//     timestamps: false,
+//   },
+//   pool: {
+//     max: 10,
+//     min: 2,
+//     idle: 10000
+//   }
+// });
 
 
 const Looks = db.define('looks', {
